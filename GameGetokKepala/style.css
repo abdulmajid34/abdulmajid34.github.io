@@ -1,0 +1,76 @@
+h1, h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+  }
+  
+  .container {
+    width: 600px;
+    margin: auto;
+    cursor: url(img/palu1.png), auto;
+  }
+  
+  .container:active {
+    cursor: url(img/palu2.png), auto;
+  }
+  
+  .awan {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .awan::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(img/awan-biru-tanpa-background.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px;
+  }
+  
+  .tikus {
+    width: 100%;
+    height: 100%;
+    background: url(img/images\ \(1\).png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+  }
+  
+  .awan.muncul .tikus {
+    top: -15px;
+  }
+body {
+    background-image: url(img/9033.jpg_wh860.jpg);
+    background-size: cover;
+}
+
+
+.register form {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+form {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.mulai {
+  width: 200px;
+  height: 40px;
+}
